@@ -45,8 +45,8 @@ Button(f1, text = 'Get Details', command = get_details).pack(pady = 10)
 f1.pack(pady = 20)
 
 #! Setting Icon
-icon_image = PhotoImage('periodic-table.png')
-gui.iconphoto(False, icon_image)
+icon = PhotoImage(file = "perTable.png")
+gui.wm_iconphoto(False, icon)
 gui.configure(bg = 'black')
 
 gui.mainloop()
